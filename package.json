@@ -11,8 +11,8 @@
   "author": "",
   "license": "MIT",
   "engines": {
-    "node": ">=12.13.1",
-    "yarn": "^1.21.1"
+    "node": ">=12.22.0",
+    "yarn": "^1.22.15"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
