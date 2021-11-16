@@ -15,5 +15,7 @@ $carousel-control-prev-icon-bg: none;
 $carousel-control-next-icon-bg: none;
 $btn-close-bg: none;
 
+@import './themes/main/index.scss';
+
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
