@@ -9,11 +9,7 @@ import i18n from '../i18n';
 
 const Comp = ({ Component, pageProps }) => {
   const { locale } = useRouter();
-  const i18nRef = useRef(null);
-  if (!i18nRef.current) {
-    i18n({ lng: locale });
-    i18nRef.current = true;
-  }
+  i18n({ lng: locale });
   const { t } = useTranslation();
   return (
     <>
@@ -28,19 +24,12 @@ const Comp = ({ Component, pageProps }) => {
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content={t('og title')}></meta>
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
-        {/* <meta name="theme-color" content="#fff3f7"></meta> */}
       </Head>
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>
     </>
   );
-};
-
-Comp.getInitialProps = async (context) => {
-  const { locale } = context.router;
-  i18n({ lng: locale });
-  return {};
 };
 
 export default Comp;
