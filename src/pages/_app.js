@@ -9,7 +9,6 @@ import i18n from '../i18n';
 
 const Comp = ({ Component, pageProps }) => {
   const { locale } = useRouter();
-  const imgLocale = 'en-US';
   const i18nRef = useRef(null);
   if (!i18nRef.current) {
     i18n({ lng: locale });
