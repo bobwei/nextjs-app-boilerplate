@@ -1,6 +1,6 @@
 {
   "plugins": [],
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "plugin:@next/next/recommended"],
   "env": {
     "browser": true,
     "es6": true,
@@ -41,5 +41,8 @@
     "no-param-reassign": 0,
     "no-alert": 0,
     "no-console": 0
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
   }
 }
