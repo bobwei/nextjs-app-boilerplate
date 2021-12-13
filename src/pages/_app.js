@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
